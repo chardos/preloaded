@@ -4,6 +4,9 @@ Rails.application.routes.draw do
 
   resources :charges
 
+  match '/features' => 'welcome#features', :via => :get
+  match '/contact' => 'welcome#contact', :via => :get
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

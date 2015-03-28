@@ -4,6 +4,9 @@
 
 @import "*";
 
+input {
+  color: black;
+}
 
 // ============================================================
 // GLOBAL
@@ -18,6 +21,7 @@
 // ============================================================
 
 .home-banner{
-  height: 500px;
+
+  height: 450px;
   background-image: image-url("home-banner-bg.jpg")
 }

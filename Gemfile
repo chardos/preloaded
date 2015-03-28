@@ -23,8 +23,6 @@ gem 'dotenv-rails', :groups => [:development, :test]
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -33,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rollbar', '~> 1.2.7'
 
 gem 'newrelic_rpm'
+gem 'angularjs-rails'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 

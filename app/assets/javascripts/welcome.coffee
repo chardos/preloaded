@@ -2,10 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-angular.module("myapp", []).controller "HelloController", ($scope) ->
+angular.module("myapp", []).controller "CalculatorController", ($scope) ->
   $scope.money = {}
   $scope.money.inputAmount = 200
   $scope.money.outputAmount = 400
+  $scope.money.savedAmount = 10
   $scope.changeInput = () ->
     $scope.money.outputAmount = $scope.money.inputAmount * 2
   $scope.changeOutput = () ->

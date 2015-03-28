@@ -1,18 +1,23 @@
 <div class="home-banner" ng-app="myapp">
   <div class="container">
+
     <div class="col-md-8">
       <h1>Get AUD at 3%.</h1>
       <h2>No extra charges.</h2>
     </div>
-    <div class="col-md-4" ng-controller="HelloController">
 
-      Testing
+    <div class="calculator col-md-4" ng-controller="CalculatorController">
+      How much do you want to transfer?
       <p>
-        <input type="text" ng-model="money.inputAmount" ng-change="changeInput()">
+        <label for="input-amount">USD</label>
+        <input id="input-amount" type="text" ng-model="money.inputAmount" ng-change="changeInput()">
       </p>
+      You will get:
       <p>
-        <input type="text" ng-model="money.outputAmount" ng-change="changeOutput()">
+        <label for="output-amount">AUD</label>
+        <input id="output-amount" type="text" ng-model="money.outputAmount" ng-change="changeOutput()">
       </p>
+      This will save you {{money.savedAmount | currency}} compared to using a bank.
       <p>
         <a href="/charges/new" class="btn btn-lg btn-default">Buy now</a>
       </p>

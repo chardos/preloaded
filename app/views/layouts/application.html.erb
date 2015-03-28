@@ -17,8 +17,34 @@
   </script>
 </head>
 <body>
+<div class="site-wrapper">
 
-<%= yield %>
+  <div class="site-wrapper-inner">
+    <div class="cover-container">
 
+      <div class="masthead clearfix">
+        <div class="inner">
+          <h3 class="masthead-brand">Preloaded</h3>
+          <nav>
+            <ul class="nav masthead-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+        <%= yield %>
+
+      <div class="mastfoot">
+        <div class="inner">
+          <p>by <a href="https://twitter.com/getpreloaded">@getpreloaded</a>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -27,6 +27,7 @@ class ChargesController < ApplicationController
   end
 
   def amount
-    params[:value].to_i || 500
+    value = params[:value].to_i
+    value > 0 ? value : 500
   end
 end

@@ -32,6 +32,7 @@ gem 'rollbar', '~> 1.2.7'
 
 gem 'newrelic_rpm'
 gem 'angularjs-rails'
+gem 'rspec'
 
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 

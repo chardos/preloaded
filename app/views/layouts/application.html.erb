@@ -17,25 +17,30 @@
   </script>
 </head>
 <body>
+
+<div class="header-menu clearfix">
+  <div class="container">
+    <h3 class="masthead-brand"><a href="/">Preloaded</a></h3>
+    <nav>
+      <ul class="nav masthead-nav">
+        <li <%= params[:action] == 'index' ? 'class=active' : '' %>><a href="/">Home</a></li>
+        <li <%= params[:action] == 'features' ? 'class=active' : '' %>><a href="/features">Features</a></li>
+        <li <%= params[:action] == 'contact' ? 'class=active' : '' %>><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<%= yield %>
+
+
 <div class="site-wrapper">
 
   <div class="site-wrapper-inner">
     <div class="cover-container">
 
-      <div class="masthead clearfix">
-        <div class="inner">
-          <h3 class="masthead-brand"><a href="/">Preloaded</a></h3>
-          <nav>
-            <ul class="nav masthead-nav">
-              <li <%= params[:action] == 'index' ? 'class=active' : '' %>><a href="/">Home</a></li>
-              <li <%= params[:action] == 'features' ? 'class=active' : '' %>><a href="/features">Features</a></li>
-              <li <%= params[:action] == 'contact' ? 'class=active' : '' %>><a href="/contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      
 
-        <%= yield %>
 
       <div class="mastfoot">
         <div class="inner">

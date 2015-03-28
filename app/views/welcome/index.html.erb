@@ -10,16 +10,16 @@
       How much do you want to transfer?
       <p>
         <label for="input-amount">USD</label>
-        <input id="input-amount" type="text" ng-model="money.inputAmount" ng-change="changeInput()">
+        <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
       </p>
       You will get:
       <p>
         <label for="output-amount">AUD</label>
-        <input id="output-amount" type="text" ng-model="money.outputAmount" ng-change="changeOutput()">
+        <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
       </p>
       This will save you {{money.savedAmount | currency}} compared to using a bank.
       <p>
-        <a href="/charges/new" class="btn btn-lg btn-default">Buy now</a>
+        <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-lg btn-default">Buy now</a>
       </p>
     </div>
 

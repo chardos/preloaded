@@ -1,8 +1,14 @@
 module Transfers
   class Coinbase
 
-    def address
-      "coinbaseaddress"
+    attr_reader :address
+
+    def initialize(address)
+      @address = address
+    end
+
+    def self.ben
+      new("1Dgh4yoNweWEGLJnwgc1JW76P4w1YzpjEf")
     end
 
     def buy_bitcoin_for(source_amount)

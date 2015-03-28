@@ -32,14 +32,34 @@ body{
 .mastfoot{
   position: static;
 }
+
+.heading2{
+  font-family: Roboto, arial, sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.heading3{
+  font-family: Roboto, arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+input{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+}
 // ============================================================
 // HOME
 // ============================================================
 
 .home-banner{
   color: white;
-  height: 450px;
-  background-image: image-url("home-banner-bg.jpg")
+  height: 560px;
+  background-image: image-url("home-banner-bg.jpg");
+
+  .container{
+    height: inherit;
+  }
 }
 
 button.stripe-button-el{
@@ -64,16 +84,42 @@ button.stripe-button-el{
   font-weight: 700;
 }
 
+.calculator{
+  margin-top: 90px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  background-color: $blue-color;
+}
+.calc-head{
+  padding: 15px 20px;
+  background-color: $dark-blue-color;
+}
+.calc-body{
+}
 
 .home-table{
   background-color: white;
+  color: black;
+  font-size: 16px;
 }
 .ht__table{
   width: 100%;
   border: 1px solid $border-color;
 
-  td{
+  %tablestyle{
+    text-align: center;
     border: 1px solid $border-color;
+    padding: 10px 20px;
+  }
+  
+  th{
+    @extend %tablestyle;
+  }
+  td{
+    @extend %tablestyle;
+  }
+  .boss{
+    background-color: #f1fde5;
+    font-size: 20px;
   }
 }
 

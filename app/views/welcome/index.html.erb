@@ -7,56 +7,61 @@
       <div class="btn btn-primary">Convert your cash</div>
     </div>
 
-    <div class="home-right-col calculator col-md-5" ng-controller="CalculatorController">
-      How much do you want to transfer?
-      <p>
-        <label for="input-amount">USD</label>
-        <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
-      </p>
-      You will get:
-      <p>
-        <label for="output-amount">AUD</label>
-        <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
-      </p>
-      This will save you {{money.savedAmount | currency}} compared to using a bank.
-      <p>
-        <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-lg btn-default">Buy now</a>
-      </p>
-    </div>
+    <div class="home-right-col calculator col-md-5 phn" ng-controller="CalculatorController">
+      <div class="calc-head">
+        <h3 class="heading3 mvn">How much do you want to transfer?</h3>
+      </div>
+      <div class="calc-body">
+        <p>
+          <label for="input-amount">USD</label>
+          <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
+        </p>
+        You will get:
+        <p>
+          <label for="output-amount">AUD</label>
+          <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
+        </p>
+        This will save you {{money.savedAmount | currency}} compared to using a bank.
+        <p>
+          <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-lg btn-default">Buy now</a>
+        </p>
+      </div>
 
   </div>
 </div>
 
 <div class="home-table">
   <div class="container container-padding">
+
+    <h2 class="heading2 mbh pbh">How do we stack up?</h2>
     <table class="ht__table">
       <tr>
-        <td></td>
-        <td>Western Union</td>
-        <td>NAB</td>
-        <td>Commonwealth Bank</td>
-        <td>ShuffleFund</td>
+        <th></th>
+        <th>Western Union</th>
+        <th>NAB</th>
+        <th>Commonwealth Bank</th>
+        <th class="boss">ShuffleFund</th>
       </tr>
       <tr>
         <td>Spread</td>
         <td>5%</td>
         <td>4%</td>
         <td>6%</td>
-        <td>3%</td>
+        <td class="boss">3%</td>
       </tr>
       <tr>
         <td>Fee</td>
         <td>$5</td>
         <td>$4</td>
         <td>$8</td>
-        <td>Free</td>
+        <td class="boss">Free</td>
       </tr>
       <tr>
         <td>Total Cost</td>
         <td>$212.20</td>
         <td>$233.40</td>
         <td>$211.23</td>
-        <td>$61.50</td>
+        <td class="boss">$61.50</td>
       </tr>
     </table>
   </div>

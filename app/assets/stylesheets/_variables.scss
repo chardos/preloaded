@@ -1,3 +1,149 @@
 $blue-color: #0e3585;
 $red-color: #ff0042;
 $light-grey-color: #EEE;
+
+
+
+
+
+
+//OTHER SHIT DELETE THIS LATER! ONLY HERE FOR THE OOCSS!
+$wrap-max-width:                        1600px;
+$navbar-default-bg:                     #f5f5f5;
+
+$text-color-light:                      #aaa;
+$text-color:                            #777777;
+$text-color-dark:                       #484848;
+$border-color:                          #e1e1e1;
+$dark-border-color:                     darken($border-color, 10%);
+$input-border-color:                    #BBB;
+$nav-color:                             #262626;
+$nav-bgcolor-hover:                     whitesmoke;
+$link-color:                            #777;
+
+$cloud_colour:                          whitesmoke;
+$orange-color:                          #ff7c16;
+$orange-color-lighter:                  #ff9039;
+$yellow-color:                          #ffa800;
+$yellow-color-darker:                   #ff9000;
+$yellow-dark-text:                      #774e00;
+$yellow-dark-text-lighter:              lighten($yellow-dark-text, 5%);
+$red-colour:                            #eb174e;
+$red-colour-lighter:                    lighten($red-colour, 5%);
+$red-colour-darker:                     darken($red-colour, 10%);
+$light-green-color:                     #f6fff2;
+$light-green-color-darker:              #eaf8e3;
+$light-green-border:                    #ceecb6;
+$green-color:                           #2c9b00;
+
+$home-inverse-bg:                       #f5f5f5;
+$home-calculator-bg:                    #f5f5f5;
+
+$admin-sidebar-bg:                      #f5f5f5;
+$admin-panel-row-hover:                 whitesmoke;
+$admin-panel-row-border:                #dddddd;
+$admin-diff-background:                 white;
+$admin-diff-border:                     #dddddd;
+$admin-dashboard-primary:               #808080;
+$admin-dashboard-secondary:             #9D9D9D;
+$admin-dashboard-well-border:           #ccc;
+$admin-dashboard-well-background:       white;
+$admin-dashboard-divider:               #d6d6d6;
+$admin-dashboard-metrics-color:         black;
+$footer-bgcolor:                        #120c09;
+$grey-block-bg:                         #f5f5f5;
+$dark-grey-block-bg:                    #777777;
+$darker-grey-block-bg:                  #2e3438;
+$darker-grey-block-text:                #939393;
+$darker-grey-block-inner-border:        #44494c;
+$light-grey-block-bg:                   #f8f8f8;
+
+$form-divider:                          #e2e2e2;
+$input-border-focus:                    #ffc190;
+
+/* Branding
+--------------------------------------------------------*/
+
+$default-font-family:                   'ArialMTStd-Light', Arial, sans-serif;
+$default-font-weight:                   normal;
+$default-lighter:                       #32404a;
+
+$font-family-headings:                  'ArialMTStd-Standard', Arial, sans-serif;
+$font-family-italics:                   'ArialMTStd-LightItalic', Arial, sans-serif;
+
+$background-secondary:                  #ea405b;
+$background-top:                        #4dc4f0;
+$background-account-nav-home:           rgba(255,255,255,0.2);
+
+$color-account:                         #728288;
+$color-warning:                         #cc0000;
+
+/* Break Points */
+$break-point-mobile:                    450px;
+$break-point-lap:                       768px;
+$break-point-desk:                      992px;
+$break-point-large-desk:                1200px;
+$break-point-cinema:                    1600px;
+
+/* Spacing */
+$tiny-spacing:                          2px;
+$small-spacing:                         5px; /* half spacing */
+$medium-spacing:                        10px; /* full spacing */
+$large-spacing:                         20px; /* double full spacing */
+$huge-spacing:                          30px; /* double large spacing */
+$gigantic-spacing:                      60px; /* double huge spacing */
+
+/* Flash Messages */
+$flash-unconfirmed-bg-color:            #fef8eb;
+$flash-submitted-bg-color:              #fef8eb;
+
+/* Business Dropdown */
+$dropdown-completion-in-progress:       #bfbfbf;
+$dropdown-completion-submitted:         #f3b73b;
+$dropdown-completion-completed:         #08750f;
+
+// Branding Tweaks
+$default-color:                         $text-color;
+$default-color-dark:                    black;
+$default-light:                         lighten($default-color, 30%);
+
+$btn-default-color:                     white;
+$btn-primary-bg:                        #ff7c16;
+
+$color-bright:                          white;
+
+$color-hint:                            rgba(113, 112, 115, 0.2);
+$color-hint-lightest:                   #ebebec;
+$color-hint-light:                      #b2b2b3;
+$color-hint-dark:                       #717073;
+$color-hint-darkest:                    #787879;
+
+$color-primary:                         #a32020;
+$color-primary-light:                   lighten($color-primary, 10%);
+
+$color-secondary:                       #dc6900;
+
+$background-primary:                    #ff7c16;
+$background-primary-light:              lighten($background-primary, 5%);
+$background-primary-lighter:            lighten($background-primary, 10%);
+$background-primary-dark:               darken($background-primary, 10%);
+
+$background-secondary:                  #909090;
+$background-secondary-light:            lighten($background-secondary, 5%);
+$background-secondary-dark:             darken($background-secondary, 10%);
+
+
+$color-info:                            #db536a;
+$background-info:                       $color-info;
+$background-info-dark:                  darken($background-info, 10%);
+
+$color-highlight:                       #db536a;
+$color-highlight-dark:                  darken($color-highlight, 10%);
+$background-highlight:                  #f9ba2d;
+$background-highlight-light:            #fff5df;
+
+$navbar-default-color:                  $default-color;
+$navbar-default-link-color:             $default-color;
+$navbar-default-bg:                     white;
+$grid-float-breakpoint:                 $break-point-desk;
+$btn-shadow-size:                       3px;

@@ -1,13 +1,63 @@
-<div class="home-banner">
+<div class="home-banner" ng-app="myapp">
   <div class="container">
-    <div class="col-md-8">
-      <h1>Get AUD at 3%.</h1>
-      <h2>No extra charges.</h2>
+
+    <div class="home-left-col col-md-7 pln">
+      <h1 class="bannertext1 mvn">Bypass the banks and convert</h1>
+      <h2 class="bannertext2 mvn pbh">AUD at 3%.</h2>
+      <div class="btn btn-primary">Convert your cash</div>
     </div>
-    <div class="col-md-4">
-      CALCULATOR HERE
+
+    <div class="home-right-col calculator col-md-5" ng-controller="CalculatorController">
+      How much do you want to transfer?
+      <p>
+        <label for="input-amount">USD</label>
+        <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
+      </p>
+      You will get:
+      <p>
+        <label for="output-amount">AUD</label>
+        <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
+      </p>
+      This will save you {{money.savedAmount | currency}} compared to using a bank.
+      <p>
+        <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-lg btn-default">Buy now</a>
+      </p>
     </div>
-    <a href="/charges/new" class="btn btn-lg btn-default">Buy now</a>
-    
+
+  </div>
+</div>
+
+<div class="home-table">
+  <div class="container container-padding">
+    <table class="ht__table">
+      <tr>
+        <td></td>
+        <td>Western Union</td>
+        <td>NAB</td>
+        <td>Commonwealth Bank</td>
+        <td>ShuffleFund</td>
+      </tr>
+      <tr>
+        <td>Spread</td>
+        <td>5%</td>
+        <td>4%</td>
+        <td>6%</td>
+        <td>3%</td>
+      </tr>
+      <tr>
+        <td>Fee</td>
+        <td>$5</td>
+        <td>$4</td>
+        <td>$8</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>Total Cost</td>
+        <td>$212.20</td>
+        <td>$233.40</td>
+        <td>$211.23</td>
+        <td>$61.50</td>
+      </tr>
+    </table>
   </div>
 </div>

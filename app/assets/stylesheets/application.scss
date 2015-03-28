@@ -4,10 +4,16 @@
 
 @import "*";
 
+input {
+  color: black;
+}
 
 // ============================================================
 // GLOBAL
 // ============================================================
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
 body{
   background-color: $light-grey-color;
 }
@@ -16,12 +22,23 @@ body{
   height: 75px;
   background-color: $blue-color;
 }
+
+.btn.btn-primary{
+  background: $red-color;
+  border: 0;
+  padding: 10px 25px;
+}
+
+.mastfoot{
+  position: static;
+}
 // ============================================================
 // HOME
 // ============================================================
 
 .home-banner{
-  height: 500px;
+  color: white;
+  height: 450px;
   background-image: image-url("home-banner-bg.jpg")
 }
 
@@ -32,6 +49,34 @@ button.stripe-button-el{
     background: none;
   }
 }
+.home-left-col{
+  text-align: left;
+  padding-top: 130px;
+}
+.bannertext1{
+  font-family: Roboto, arial, sans-serif;
+  font-size: 34px;
+  font-weight: 300;
+}
+.bannertext2{
+  font-family: Roboto, arial, sans-serif;
+  font-size: 85px;
+  font-weight: 700;
+}
+
+
+.home-table{
+  background-color: white;
+}
+.ht__table{
+  width: 100%;
+  border: 1px solid $border-color;
+
+  td{
+    border: 1px solid $border-color;
+  }
+}
+
 
 // ============================================================
 // PAY PAGE

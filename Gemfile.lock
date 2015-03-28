@@ -77,9 +77,6 @@ GEM
       rest-client
     columnize (0.9.0)
     debug_inspector (0.0.2)
-<<<<<<< HEAD
-    diff-lcs (1.2.5)
-=======
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -88,12 +85,12 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     devise-bootstrap-views (0.0.4)
->>>>>>> Added users
+    diff-lcs (1.2.5)
     domain_name (0.5.23)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (1.0.2)
-    dotenv-rails (1.0.2)
-      dotenv (= 1.0.2)
+    dotenv (2.0.0)
+    dotenv-rails (2.0.0)
+      dotenv (= 2.0.0)
     erubis (2.7.0)
     execjs (2.4.0)
     globalid (0.3.3)
@@ -126,7 +123,7 @@ GEM
     multi_json (1.11.0)
     multi_xml (0.5.5)
     netrc (0.10.3)
-    newrelic_rpm (3.9.9.275)
+    newrelic_rpm (3.11.1.284)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -173,7 +170,7 @@ GEM
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
       rspec-mocks (~> 3.2.0)
-    rspec-core (3.2.1)
+    rspec-core (3.2.2)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -229,13 +226,10 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.4)
   byebug
   coffee-rails (~> 4.1.0)
-<<<<<<< HEAD
-  devise
-  devise-bootstrap-views
-=======
   coinbase
   coinjar
->>>>>>> e6e8f3908e33a8e009021bef3b78b916ae827120
+  devise
+  devise-bootstrap-views
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails

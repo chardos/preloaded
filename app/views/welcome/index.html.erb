@@ -1,16 +1,17 @@
-<div class="home-banner">
+<div class="home-banner" ng-app="myapp">
   <div class="container">
     <div class="col-md-8">
       <h1>Get AUD at 3%.</h1>
       <h2>No extra charges.</h2>
     </div>
-    <div class="col-md-4">
-      test
+    <div class="col-md-4" ng-controller="HelloController">
+
+      Testing
       <p>
-      <input type="text"> </input>
+        <input type="text" ng-model="money.inputAmount" ng-change="changeInput()">
       </p>
       <p>
-        <input type="text"> </input>
+        <input type="text" ng-model="money.outputAmount" ng-change="changeOutput()">
       </p>
       <p>
         <a href="/charges/new" class="btn btn-lg btn-default">Buy now</a>

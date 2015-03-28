@@ -8,9 +8,12 @@
 // ============================================================
 // GLOBAL
 // ============================================================
-
+body{
+  background-color: $light-grey-color;
+}
 .header-menu{
   width: 100%;
+  height: 75px;
   background-color: $blue-color;
 }
 // ============================================================
@@ -20,4 +23,20 @@
 .home-banner{
   height: 500px;
   background-image: image-url("home-banner-bg.jpg")
+}
+
+button.stripe-button-el{
+  background: $red-color;
+
+  span{
+    background: none;
+  }
+}
+
+// ============================================================
+// PAY PAGE
+// ============================================================
+
+.pay-panel{
+  margin-top: 80px;
 }

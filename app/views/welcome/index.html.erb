@@ -14,31 +14,31 @@
         <h3 class="heading3 mvn">How much do you want to transfer?</h3>
       </div>
       <div class="calc-body">
-        <p>
-          <select name="" id="" class="currency-select">
+        <div>
+          <select name="" id="" class="currency-select mbl">
             <option value="asdfklj">CNY - Chinese Renminbi</option>
             <option value="asdfklj">EUR - Euros</option>
             <option value="asdfklj">USD - United States Dollar</option>
           </select>
-        </p>
-        <p class="calc-input">
+        </div>
+        <div class="calc-input mbl">
           <label for="input-amount">CNY </label>
           <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
-        </p>
+        </div>
         <div class="calc-equals">
           =
         </div>
-        <p class="calc-input">
+        <div class="calc-input">
           <label for="output-amount">AUD</label>
           <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
-        </p>
+        </div>
         <div class="clearfix"></div>
         <div class="pvl mbh">
           <div class="savings-msg pts">You save <span class="green-color">{{money.savedAmount | currency}}</span>.</div>
-          <p>
+          <div>
             <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-hollow fr ">Buy now</a>
             <a class="btn btn-hollow fr mrs js-find-out">Find out how</a>
-          </p>
+          </div>
           </div>
       </div>
 

@@ -42,6 +42,18 @@ body{
   border: 0;
   padding: 10px 25px;
 }
+.btn.btn-hollow{
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 25px;
+
+  &:hover{
+    color: white;
+  }
+}
+.fr{
+  float: right;
+}
 
 .mastfoot{
   position: static;
@@ -57,7 +69,11 @@ body{
   font-size: 24px;
   font-weight: 700;
 }
+label{
+  font-weight: normal;
+}
 input{
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid $border-color;
@@ -108,8 +124,25 @@ button.stripe-button-el{
   background-color: $dark-blue-color;
 }
 .calc-body{
+  padding: 30px 20px;
 }
-
+.calc-equals{
+  padding-top: 27px;
+  float: left;
+  width: 10%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.calc-input{
+  text-align: left;
+  float: left;
+  width: 45%;
+}
+.currency-select{
+  width: 100%;
+  padding:20px 20px;
+}
 .home-table{
   background-color: white;
   color: black;
@@ -136,7 +169,15 @@ button.stripe-button-el{
     font-size: 20px;
   }
 }
-
+.savings-msg{
+  float: left;
+  font-size: 24px;
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 700;
+}
+.green-color{
+  color: $green-color;
+}
 
 // ============================================================
 // PAY PAGE
@@ -145,3 +186,5 @@ button.stripe-button-el{
 .pay-panel{
   margin-top: 80px;
 }
+
+

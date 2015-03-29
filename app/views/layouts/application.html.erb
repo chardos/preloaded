@@ -17,40 +17,40 @@
   </script>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  <div class="notice"><%= notice %></div>
+  <div class="alert"><%= alert %></div>
 
-<div class="header-menu clearfix">
-  <div class="container">
-    <h3 class="masthead-brand"><a href="/">ShuffleFund</a></h3>
-    <nav>
-      <ul class="nav masthead-nav">
-        <li <%= params[:action] == 'index' ? 'class=active' : '' %>><a href="/">Home</a></li>
-        <li <%= params[:action] == 'features' ? 'class=active' : '' %>><a href="/features">Login</a></li>
-        <li <%= params[:action] == 'contact' ? 'class=active' : '' %>><a href="/contact">Sign up</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
-
-
-<div class="site-wrapper">
-
-  <div class="site-wrapper-inner">
-    <div class="cover-container">
-
-      <%= yield %>
-
-
-      <div class="mastfoot">
-        <div class="inner">
-          <p>by <a href="https://twitter.com/getpreloaded">@getpreloaded</a>.</p>
-        </div>
-      </div>
-
+  <div class="header-menu clearfix">
+    <div class="container">
+      <h3 class="masthead-brand"><a href="/">ShuffleFund</a></h3>
+      <nav>
+        <ul class="nav masthead-nav">
+          <li <%= params[:action] == 'index' ? 'class=active' : '' %>><a href="/">Home</a></li>
+          <li <%= params[:action] == 'features' ? 'class=active' : '' %>><a href="/features">Login</a></li>
+          <li <%= params[:action] == 'contact' ? 'class=active' : '' %>><a href="/contact">Sign up</a></li>
+        </ul>
+      </nav>
     </div>
   </div>
-</div>
+
+
+  <div class="site-wrapper">
+
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+
+        <%= yield %>
+
+        <div class="mastfoot">
+          <div class="inner">
+            <p>by <a href="https://twitter.com/getpreloaded">@getpreloaded</a>.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>

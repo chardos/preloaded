@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Preloaded</title>
+  <title><%= t("name") %></title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
@@ -26,9 +26,9 @@
 
   <div class="header-menu clearfix">
     <div class="container">
-      <h3 class="masthead-brand"><a href="/">ShuffleFund</a></h3>
+      <h3 class="masthead-brand ptm"><%= link_to image_tag('logo.png'), root_path %></h3>
       <nav>
-        <ul class="nav masthead-nav">
+        <ul class="nav masthead-nav ptm">
           <li <%= params[:action] == 'index' ? 'class=active' : '' %>><a href="/">Home</a></li>
           <li <%= params[:action] == 'features' ? 'class=active' : '' %>><a href="/features">Login</a></li>
           <li <%= params[:action] == 'contact' ? 'class=active' : '' %>><a href="/contact">Sign up</a></li>
@@ -44,7 +44,8 @@
       <div class="cover-container">
 
         <%= yield %>
-
+        
+        <div class="clearfix"></div>
         <div class="mastfoot">
           <div class="inner">
             <p>by <a href="https://twitter.com/getpreloaded">@getpreloaded</a>.</p>

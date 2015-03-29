@@ -1,21 +1,24 @@
 <div class="pay-page">
 
-  <div class="pay-panel well col-md-4 col-md-offset-4">
+  <div class="pay-panel well col-md-6 col-md-offset-3">
     
   <%= form_tag charges_path do %>
     <article>
-      <label class="amount">
+      <h2 class="heading3">Ready to convert your cash?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero facere ratione sed quis aspernatur, quia excepturi expedita. Modi, blanditiis facilis!</p>
+      <label class="amount mbl">
         <span>Amount: <%= @amount %>USD</span>
       </label>
     </article>
 
-    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button "
             data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
             data-address="true"
             data-description="Preloaded card"
             data-currency="USD"
             data-amount="<%= @amount_in_cents %>"></script>
   <% end %>
+  <div class="mbh"></div>
 
   </div>
 

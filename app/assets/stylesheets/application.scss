@@ -179,6 +179,12 @@ button.stripe-button-el{
     font-size: 20px;
   }
 }
+
+@media only screen and (max-width: 700px) { 
+  .ht__table{
+    display: none;
+  }
+}
 .savings-msg{
   float: left;
   font-size: 22px;

@@ -1,3 +1,5 @@
+<div ng-app="myapp">
+<div ng-controller="CalculatorController">
 <div class="home-banner" ng-app="myapp">
   <div class="container">
 
@@ -7,7 +9,7 @@
       <div class="btn btn-primary">Convert your cash</div>
     </div>
 
-    <div class="home-right-col calculator col-md-5 phn" ng-controller="CalculatorController">
+    <div class="home-right-col calculator col-md-5 phn">
       <div class="calc-head">
         <h3 class="heading3 mvn">How much do you want to transfer?</h3>
       </div>
@@ -71,11 +73,13 @@
       </tr>
       <tr>
         <td>Total Cost</td>
-        <td>{{}}$212.20</td>
-        <td>$233.40</td>
-        <td>$211.23</td>
-        <td class="boss">$61.50</td>
+        <td>{{money.westernUnionFees | currency}}</td>
+        <td>{{money.NABFees | currency}}</td>
+        <td>{{money.commonwealthFees | currency}}</td>
+        <td class="boss">{{money.ourFees | currency}}</td>
       </tr>
     </table>
   </div>
+</div>
+</div>
 </div>

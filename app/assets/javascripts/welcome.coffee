@@ -9,6 +9,8 @@ angular.module("myapp", []).controller "CalculatorController", ["$scope", ($scop
   $scope.money.savedAmount = 10
   $scope.changeInput = () ->
     $scope.money.outputAmount = $scope.money.inputAmount * 2
+    $scope.money.savedAmount = $scope.money.inputAmount * 0.0253
   $scope.changeOutput = () ->
     $scope.money.inputAmount = $scope.money.outputAmount / 2
+    $scope.money.savedAmount = $scope.money.inputAmount * 0.0253
 ]

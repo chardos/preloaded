@@ -5,6 +5,7 @@
 angular.module("myapp", []).controller "CalculatorController", ["$scope", ($scope) ->
   $scope.money = {}
   $scope.money.inputAmount = 200
+  $scope.money.inputAmountCurrency = 'EUR'
   $scope.recalculate = () ->
     $scope.money.ourFees = $scope.money.inputAmount * 0.03
     $scope.money.westernUnionFees = $scope.money.inputAmount * 0.05 + 5

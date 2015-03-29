@@ -15,14 +15,14 @@
       </div>
       <div class="calc-body">
         <p>
-          <select name="" id="" class="currency-select">
-            <option value="asdfklj">CNY - Chinese Renminbi</option>
-            <option value="asdfklj">EUR - Euros</option>
-            <option value="asdfklj">USD - United States Dollar</option>
+          <select name="" id="" class="currency-select" ng-model="money.inputAmountCurrency">
+            <option value="CNY">CNY - Chinese Renminbi</option>
+            <option value="EUR" selected>EUR - Euros</option>
+            <option value="USD">USD - United States Dollar</option>
           </select>
         </p>
         <p class="calc-input">
-          <label for="input-amount">CNY </label>
+          <label for="input-amount">{{money.inputAmountCurrency}}</label>
           <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
         </p>
         <div class="calc-equals">
@@ -55,7 +55,7 @@
         <th>Western Union</th>
         <th>NAB</th>
         <th>Commonwealth Bank</th>
-        <th class="boss">ShuffleFund</th>
+        <th class="boss">BORDERLESS</th>
       </tr>
       <tr>
         <td>Spread</td>

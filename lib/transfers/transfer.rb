@@ -1,5 +1,5 @@
-require_relative 'coinjar'
-require_relative 'coinbase'
+require_relative 'coinjar_client'
+require_relative 'coinbase_client'
 
 module Transfers
   class Transfer

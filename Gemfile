@@ -39,7 +39,7 @@ gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'devise'
 gem 'devise-bootstrap-views'
 
-gem 'coinbase'
+gem 'coinbase', :git => 'https://github.com/coinbase/coinbase-ruby'
 gem 'coinjar'
 
 # Use ActiveModel has_secure_password
@@ -53,7 +53,7 @@ gem 'coinjar'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

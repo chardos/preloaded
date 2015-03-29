@@ -1,10 +1,15 @@
+require 'coinbase'
+require 'coinbase/client'
+
 module Transfers
-  class Coinbase
+  class CoinbaseClient
 
     attr_reader :address
 
     def initialize(address)
       @address = address
+      #require 'pry'; binding.pry
+      @client = Coinbase::Client.new(ENV['COINBASE_API_KEY'], ENV['COINBASE_API_SECRET'])
     end
 
     def self.ben
@@ -21,6 +26,7 @@ module Transfers
     end
 
     def send_bitcoins(address, amount)
+      puts @client.balance.to_s
       puts "coinbase send #{address}, #{amount}"
     end
 

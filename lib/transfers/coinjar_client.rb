@@ -1,7 +1,7 @@
 require 'coinjar'
 
 module Transfers
-  class Coinjar
+  class CoinjarClient
 
     attr_reader :address
 

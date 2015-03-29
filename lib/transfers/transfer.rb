@@ -10,9 +10,10 @@ module Transfers
     end
 
     def transfer(source_amount)
-      number_of_bitcoins = @source.buy_bitcoin_for(source_amount)
+      #number_of_bitcoins = @source.buy_bitcoin_for(source_amount)
+      number_of_bitcoins = 0.00001
       @source.send_bitcoins(@target.address, number_of_bitcoins)
-      @target.sell_bitcoin(number_of_bitcoins)
+      #@target.sell_bitcoin(number_of_bitcoins)
     end
 
   end

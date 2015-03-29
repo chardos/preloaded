@@ -41,6 +41,7 @@ gem 'devise-bootstrap-views'
 
 gem 'coinbase', :git => 'https://github.com/coinbase/coinbase-ruby'
 gem 'coinjar'
+gem 'coinjar-checkout'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

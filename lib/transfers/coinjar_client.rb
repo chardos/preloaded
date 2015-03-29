@@ -16,7 +16,7 @@ module Transfers
 
     def buy_bitcoin_for(source_amount)
       puts "coinjar buy #{source_amount}"
-      0.12
+      0.002
     end
 
     def sell_bitcoin(number_of_bitcoins)
@@ -29,6 +29,7 @@ module Transfers
       p = CoinJar::Payment.new payee: address, amount: amount
 
       p.create
+
       p.confirm!
 
     end

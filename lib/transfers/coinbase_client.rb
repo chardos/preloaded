@@ -8,7 +8,6 @@ module Transfers
 
     def initialize(address)
       @address = address
-      #require 'pry'; binding.pry
       @client = Coinbase::Client.new(ENV['COINBASE_API_KEY'], ENV['COINBASE_API_SECRET'])
     end
 
@@ -18,7 +17,7 @@ module Transfers
 
     def buy_bitcoin_for(source_amount)
       puts "coinbase buy #{source_amount}"
-      0.12
+      0.002
     end
 
     def sell_bitcoin(number_of_bitcoins)
@@ -26,8 +25,10 @@ module Transfers
     end
 
     def send_bitcoins(address, amount)
-      puts @client.balance.to_s
+      #puts @client.balance.to_s
       puts "coinbase send #{address}, #{amount}"
+
+      @client.send_money address, amount, "thanks for the coffee!"
     end
 
   end

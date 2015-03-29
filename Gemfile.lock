@@ -81,6 +81,10 @@ GEM
       activesupport
       multi_json
       rest-client
+    coinjar-checkout (0.0.3)
+      activesupport
+      multi_json
+      rest-client
     debug_inspector (0.0.2)
     devise (3.4.1)
       bcrypt (~> 3.0)
@@ -250,6 +254,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   coinbase!
   coinjar
+  coinjar-checkout
   devise
   devise-bootstrap-views
   dotenv-rails

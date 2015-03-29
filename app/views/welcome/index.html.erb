@@ -1,81 +1,93 @@
-<div class="home-banner" ng-app="myapp">
-  <div class="container">
+<div ng-app="myapp">
+  <div ng-controller="CalculatorController">
 
-    <div class="home-left-col col-md-7 pln">
-      <h1 class="bannertext1 mvn">Bypass the banks and convert</h1>
-      <h2 class="bannertext2 mvn pbh">AUD at 3%.</h2>
-      <div class="btn btn-primary">Convert your cash</div>
-    </div>
+    <div class="home-banner">
+      <div class="container">
 
-    <div class="home-right-col calculator col-md-5 phn" ng-controller="CalculatorController">
-      <div class="calc-head">
-        <h3 class="heading3 mvn">How much do you want to transfer?</h3>
-      </div>
-      <div class="calc-body">
-        <p>
-          <select name="" id="" class="currency-select">
-            <option value="asdfklj">CNY - Chinese Renminbi</option>
-            <option value="asdfklj">EUR - Euros</option>
-            <option value="asdfklj">USD - United States Dollar</option>
-          </select>
-        </p>
-        <p class="calc-input">
-          <label for="input-amount">CNY </label>
-          <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
-        </p>
-        <div class="calc-equals">
-          =
+        <div class="home-left-col col-md-7 pln">
+          <h1 class="bannertext1 mvn">Bypass the banks and convert</h1>
+
+          <h2 class="bannertext2 mvn pbh">AUD at 3%.</h2>
+
+          <div class="btn btn-primary">Convert your cash</div>
         </div>
-        <p class="calc-input">
-          <label for="output-amount">AUD</label>
-          <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
-        </p>
-        <div class="clearfix"></div>
-        <div class="pvl mbh">
-          <div class="savings-msg pts">You save <span class="green-color">{{money.savedAmount | currency}}</span>.</div>
-          <p>
-            <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-hollow fr ">Buy now</a>
-            <a class="btn btn-hollow fr mrs js-find-out">Find out how</a>
-          </p>
+
+        <div class="home-right-col calculator col-md-5 phn">
+          <div class="calc-head">
+            <h3 class="heading3 mvn">How much do you want to transfer?</h3>
           </div>
+          <div class="calc-body">
+            <p>
+              <select name="" id="" class="currency-select">
+                <option value="asdfklj">CNY - Chinese Renminbi</option>
+                <option value="asdfklj">EUR - Euros</option>
+                <option value="asdfklj">USD - United States Dollar</option>
+              </select>
+            </p>
+            <p class="calc-input">
+              <label for="input-amount">CNY </label>
+              <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
+            </p>
+
+            <div class="calc-equals">
+              =
+            </div>
+            <p class="calc-input">
+              <label for="output-amount">AUD</label>
+              <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
+            </p>
+
+            <div class="clearfix"></div>
+            <div class="pvl mbh">
+              <div class="savings-msg pts">You save <span class="green-color">{{money.savedAmount | currency}}</span>.
+              </div>
+              <p>
+                <a href="/charges/new?value={{money.inputAmount}}" class="btn btn-hollow fr ">Buy now</a>
+                <a class="btn btn-hollow fr mrs js-find-out">Find out how</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
       </div>
 
+      <div class="home-table">
+        <div class="container container-padding">
+
+          <h2 class="heading2 mbh pbh">How do we stack up?</h2>
+          <table class="ht__table">
+            <tr>
+              <th></th>
+              <th>Western Union</th>
+              <th>NAB</th>
+              <th>Commonwealth Bank</th>
+              <th class="boss">ShuffleFund</th>
+            </tr>
+            <tr>
+              <td>Spread</td>
+              <td>5%</td>
+              <td>4%</td>
+              <td>6%</td>
+              <td class="boss">3%</td>
+            </tr>
+            <tr>
+              <td>Fee</td>
+              <td>$5</td>
+              <td>$4</td>
+              <td>$8</td>
+              <td class="boss">Free</td>
+            </tr>
+            <tr>
+              <td>Total Cost</td>
+              <td>{{money.savedAmount | currency}}</td>
+              <td>{{money.savedAmount | currency}}</td>
+              <td>{{money.savedAmount | currency}}</td>
+              <td class="boss">{{money.savedAmount | currency}}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="home-table">
-  <div class="container container-padding">
-
-    <h2 class="heading2 mbh pbh">How do we stack up?</h2>
-    <table class="ht__table">
-      <tr>
-        <th></th>
-        <th>Western Union</th>
-        <th>NAB</th>
-        <th>Commonwealth Bank</th>
-        <th class="boss">ShuffleFund</th>
-      </tr>
-      <tr>
-        <td>Spread</td>
-        <td>5%</td>
-        <td>4%</td>
-        <td>6%</td>
-        <td class="boss">3%</td>
-      </tr>
-      <tr>
-        <td>Fee</td>
-        <td>$5</td>
-        <td>$4</td>
-        <td>$8</td>
-        <td class="boss">Free</td>
-      </tr>
-      <tr>
-        <td>Total Cost</td>
-        <td>{{}}$212.20</td>
-        <td>$233.40</td>
-        <td>$211.23</td>
-        <td class="boss">$61.50</td>
-      </tr>
-    </table>
-  </div>
-</div>

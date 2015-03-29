@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plan: MyString
+  recipient: MyString
+  bsb: MyString
+  acc: MyString
+  amount: MyString
+
+two:
+  plan: MyString
+  recipient: MyString
+  bsb: MyString
+  acc: MyString
+  amount: MyString

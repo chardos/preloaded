@@ -15,7 +15,7 @@
       </div>
       <div class="calc-body">
         <p>
-          <select name="" id="" class="currency-select" ng-model="money.inputAmountCurrency">
+          <select name="" id="" class="currency-select" ng-model="money.inputAmountCurrency" ng-change="changeInput()">
             <option value="CNY">CNY - Chinese Renminbi</option>
             <option value="EUR" selected>EUR - Euros</option>
             <option value="USD">USD - United States Dollar</option>
@@ -23,14 +23,14 @@
         </p>
         <p class="calc-input">
           <label for="input-amount">{{money.inputAmountCurrency}}</label>
-          <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
+          <input id="input-amount"  ng-model="money.inputAmount" ng-change="changeInput()">
         </p>
         <div class="calc-equals">
           =
         </div>
         <p class="calc-input">
           <label for="output-amount">AUD</label>
-          <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
+          <input id="output-amount" ng-model="money.outputAmount" ng-change="changeOutput()">
         </p>
         <div class="clearfix"></div>
         <div class="pvl mbh">

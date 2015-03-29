@@ -17,8 +17,10 @@
   </script>
 </head>
 <body>
-  <div class="notice"><%= notice %></div>
-  <div class="alert"><%= alert %></div>
+  <% if notice.present? || alert.present? %>
+    <div class="notice"><%= notice %></div>
+    <div class="alert"><%= alert %></div>
+  <% end %>
 
   <div class="header-menu clearfix">
     <div class="container">

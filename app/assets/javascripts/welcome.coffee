@@ -11,9 +11,9 @@ angular.module("myapp", []).controller "CalculatorController", ["$scope", ($scop
     if $scope.money.inputAmountCurrency == 'EUR'
       $scope.money.exchangeRate = 1.40
     if $scope.money.inputAmountCurrency == 'USD'
-      $scope.money.exchangeRate = 3
+      $scope.money.exchangeRate = 1.29
     if $scope.money.inputAmountCurrency == 'CNY'
-      $scope.money.exchangeRate = 4
+      $scope.money.exchangeRate = 0.21
   $scope.recalculate = () ->
     $scope.money.ourFees = $scope.money.inputAmount * 0.03
     $scope.money.westernUnionFees = $scope.money.inputAmount * 0.05 + 5

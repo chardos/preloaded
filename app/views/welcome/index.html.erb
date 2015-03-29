@@ -14,23 +14,24 @@
         <h3 class="heading3 mvn">How much do you want to transfer?</h3>
       </div>
       <div class="calc-body">
+
         <div>
-          <select name="" id="" class="currency-select mbl">
-            <option value="asdfklj">CNY - Chinese Renminbi</option>
-            <option value="asdfklj">EUR - Euros</option>
-            <option value="asdfklj">USD - United States Dollar</option>
+          <select name="" id="" class="currency-select" ng-model="money.inputAmountCurrency" ng-change="changeInput()">
+            <option value="CNY">CNY - Chinese Renminbi</option>
+            <option value="EUR" selected>EUR - Euros</option>
+            <option value="USD">USD - United States Dollar</option>
           </select>
         </div>
-        <div class="calc-input mbl">
-          <label for="input-amount">CNY </label>
-          <input id="input-amount" type="number" ng-model="money.inputAmount" ng-change="changeInput()">
-        </div>
+        <p class="calc-input">
+          <label for="input-amount">{{money.inputAmountCurrency}}</label>
+          <input id="input-amount"  ng-model="money.inputAmount" ng-change="changeInput()">
+        </p>
         <div class="calc-equals">
           =
         </div>
         <div class="calc-input">
           <label for="output-amount">AUD</label>
-          <input id="output-amount" type="number" ng-model="money.outputAmount" ng-change="changeOutput()">
+          <input id="output-amount" ng-model="money.outputAmount" ng-change="changeOutput()">
         </div>
         <div class="clearfix"></div>
         <div class="pvl mbh">
@@ -56,7 +57,7 @@
         <th>Western Union</th>
         <th>NAB</th>
         <th>Commonwealth Bank</th>
-        <th class="boss">ShuffleFund</th>
+        <th class="boss">BORDERLESS</th>
       </tr>
       <tr>
         <td>Spread</td>

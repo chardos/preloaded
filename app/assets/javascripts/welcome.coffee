@@ -5,6 +5,15 @@
 angular.module("myapp", []).controller "CalculatorController", ["$scope", ($scope) ->
   $scope.money = {}
   $scope.money.inputAmount = 200
+  $scope.money.outputAmount = 0
+  $scope.money.inputAmountCurrency = 'EUR'
+  $scope.updateCurrency = () ->
+    if $scope.money.inputAmountCurrency == 'EUR'
+      $scope.money.exchangeRate = 1.40
+    if $scope.money.inputAmountCurrency == 'USD'
+      $scope.money.exchangeRate = 3
+    if $scope.money.inputAmountCurrency == 'CNY'
+      $scope.money.exchangeRate = 4
   $scope.recalculate = () ->
     $scope.money.ourFees = $scope.money.inputAmount * 0.03
     $scope.money.westernUnionFees = $scope.money.inputAmount * 0.05 + 5
@@ -14,10 +23,12 @@ angular.module("myapp", []).controller "CalculatorController", ["$scope", ($scop
 
 
   $scope.changeInput = () ->
-    $scope.money.outputAmount = $scope.money.inputAmount * 2
+    $scope.updateCurrency()
+    $scope.money.outputAmount = (parseFloat($scope.money.inputAmount) * $scope.money.exchangeRate).toFixed(2)
     $scope.recalculate()
   $scope.changeOutput = () ->
-    $scope.money.inputAmount = $scope.money.outputAmount / 2
+    $scope.updateCurrency()
+    $scope.money.inputAmount = (parseFloat($scope.money.outputAmount) / $scope.money.exchangeRate).toFixed(2)
     $scope.recalculate()
 
   $scope.changeInput();
